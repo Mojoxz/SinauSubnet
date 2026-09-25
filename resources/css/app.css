@@ -1,0 +1,28 @@
+/* ============================================================
+   Self-hosted fonts — tidak bergantung pada CDN eksternal.
+   Aman digunakan di jaringan lab sekolah yang offline/terisolasi.
+   ============================================================ */
+
+/* IBM Plex Sans — font antarmuka utama */
+@import '@fontsource/ibm-plex-sans/400.css';
+@import '@fontsource/ibm-plex-sans/500.css';
+@import '@fontsource/ibm-plex-sans/600.css';
+@import '@fontsource/ibm-plex-sans/700.css';
+
+/* IBM Plex Mono — font monospace untuk alamat IP, subnet mask, biner, kode */
+@import '@fontsource/ibm-plex-mono/400.css';
+@import '@fontsource/ibm-plex-mono/500.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+    }
+
+    code, kbd, samp, pre, .font-mono {
+        font-family: 'IBM Plex Mono', ui-monospace, 'Courier New', monospace;
+    }
+}
